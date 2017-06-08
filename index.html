@@ -93,22 +93,17 @@
     </div>
 			</div>
 	</section>
-	<section id="contact">
-		<div class="wrapper">
-			<h2>Contact Me</h2>
-			<div id="note"></div>
-			<form method="post" action="javascript:alert('success!');" id="ajax-contact-form">
-				<input type="text" pattern="[a-zA-Z éèêëôùàüö]+" required class="input" placeholder="Name" name="name">
-				<input type="email" required class="input" placeholder="E-Mail" name="email">
-				<textarea required  placeholder="Message" name="message"></textarea>
-				<input type="submit" class="submit" value="Send" name="Send">
-			</form>
-					</div>
-	</section>
 </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
      <script defer src="assets/js/jquery.flexslider.js"></script>
+	 <script>
+	 $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </body>
